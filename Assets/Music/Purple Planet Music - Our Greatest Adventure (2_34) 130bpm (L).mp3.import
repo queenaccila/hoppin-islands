@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxily35yrw0ga"
+path="res://.godot/imported/Purple Planet Music - Our Greatest Adventure (2_34) 130bpm (L).mp3-396d369c47380640f4fb5f79270c8d91.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Purple Planet Music - Our Greatest Adventure (2_34) 130bpm (L).mp3"
+dest_files=["res://.godot/imported/Purple Planet Music - Our Greatest Adventure (2_34) 130bpm (L).mp3-396d369c47380640f4fb5f79270c8d91.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

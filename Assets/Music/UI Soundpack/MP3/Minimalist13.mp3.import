@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8ww5idm6ec4"
+path="res://.godot/imported/Minimalist13.mp3-3f9bad8ad755fc352326e2c7899f7384.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/UI Soundpack/MP3/Minimalist13.mp3"
+dest_files=["res://.godot/imported/Minimalist13.mp3-3f9bad8ad755fc352326e2c7899f7384.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

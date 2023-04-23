@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=3 uid="uid://dubn5lh1htxad"]
+
+[ext_resource type="Texture2D" uid="uid://3s4kft7nvpvl" path="res://Assets/Art/floatingIslands_ [version 1.1]/waterfalls_0_0.png" id="1_lyscb"]
+
+[sub_resource type="Animation" id="Animation_qowjn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_vaacn"]
+resource_name = "running"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xpr3d"]
+_data = {
+"RESET": SubResource("Animation_qowjn"),
+"running": SubResource("Animation_vaacn")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0404e"]
+animation = &"running"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fdsia"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_22trd"]
+states/running/node = SubResource("AnimationNodeAnimation_0404e")
+states/running/position = Vector2(470, 100)
+transitions = ["Start", "running", SubResource("AnimationNodeStateMachineTransition_fdsia")]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ij5jo"]
+
+[node name="Waterfall" type="Sprite2D"]
+texture = ExtResource("1_lyscb")
+hframes = 11
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xpr3d")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_22trd")
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_ij5jo")

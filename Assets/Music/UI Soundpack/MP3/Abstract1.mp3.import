@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://231fd7q4npst"
+path="res://.godot/imported/Abstract1.mp3-75567b03e3f7315aecf78eb1e6ac96cc.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/UI Soundpack/MP3/Abstract1.mp3"
+dest_files=["res://.godot/imported/Abstract1.mp3-75567b03e3f7315aecf78eb1e6ac96cc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

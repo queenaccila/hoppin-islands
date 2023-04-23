@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7y2l2wwg1utr"
+path="res://.godot/imported/Purple Planet Music - Cloud Nine (1_39) 90bpm.mp3-5ef223f80ccdc3891052da424c830792.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Purple Planet Music - Cloud Nine (1_39) 90bpm.mp3"
+dest_files=["res://.godot/imported/Purple Planet Music - Cloud Nine (1_39) 90bpm.mp3-5ef223f80ccdc3891052da424c830792.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
